@@ -1,4 +1,3 @@
-;
 ;Mac Settings for alt tab
 (setq mac-option-modifier nil
       mac-command-modifier 'meta
@@ -18,3 +17,6 @@
 ;Add scala mode
 (add-to-list 'load-path "~/.emacs.d/scala-mode2/")
 (require 'scala-mode2)
+
+;Add line numbers
+(global-linum-mode t)
