@@ -11,6 +11,10 @@
 
 ;Add evil mode
 (add-to-list 'load-path "~/.emacs.d/evil") ;;no need with 24
+;;Use C-u to scroll up in Normal mode
+;;->For now switch to emacs mode whenever passing interactive
+;;arguments with C-u to elisp
+(setq evil-want-C-u-scroll t)
 (require 'evil)
 (evil-mode 1)
 
